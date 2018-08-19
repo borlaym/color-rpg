@@ -1,16 +1,24 @@
 import * as React from 'react';
 import './App.css';
-import getAllCharacters from './utils/CharacterParser';
+import { connect } from 'react-redux';
+import Character from './models/Character';
+import StanceComponent from './components/Stance';
+import { State } from './reducers';
 
-const characters = getAllCharacters();
-global.console.log(characters)
-
-class App extends React.Component {
-  public render() {
-    return (
-      <div className="App" />
-    );
-  }
+interface Props {
+	characters: Character[]
 }
 
-export default App;
+function App(props: Props) {
+	return (
+		<div className="App">
+			{props.characters.map((c: Character) => <StanceComponent key={c.name} {...c.stances[0]} />)}
+		</div>
+	);
+}
+
+export default connect(
+	(state: State) => ({
+		characters: state.characters
+	})
+)(App);
