@@ -8,9 +8,9 @@ export default function CurrentMonsterReducer(state = defaultState, action: Redu
 	switch (action.type) {
 		case ActionType.ATTACK: {
 			const attackColors = action.payload.action.colors;
-			const monsterFirstColors = state.health.slice(0, attackColors.length)
+			const monsterFirstColors = state.defense.slice(0, attackColors.length)
 			if (isAttackPossible(action.payload.action, state)) {
-				return new Monster(state.name, state.health.slice(attackColors.length))
+				return new Monster(state.name, state.defense.slice(attackColors.length), state.health)
 			} else {
 				throw new Error(`Attack not possible, monster health: ${monsterFirstColors}, attack: ${attackColors}`)
 			}

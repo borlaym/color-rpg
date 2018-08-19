@@ -3,7 +3,8 @@ import monsterList from '../monsters.json';
 
 export interface MonsterAsJSON {
 	name: string,
-	health: string[]
+	defense: string[],
+	health: number
 }
 
 export default class Monster {
@@ -12,16 +13,17 @@ export default class Monster {
 		if (!monsterData) {
 			throw new Error('Monster not found among available monsters: ' + name);
 		}
-		const health: Color[] = monsterData.health.map(c => {
+		const health: Color[] = monsterData.defense.map(c => {
 			if (!Color[c]) {
 				throw new Error('Color not found: ' + c);
 			}
 			return Color[c]
 		})
-		return new Monster(monsterData.name, health)
+		return new Monster(monsterData.name, health, monsterData.health)
 	}
 	constructor(
 		public readonly name: string,
-		public readonly health: Color[]
+		public readonly defense: Color[],
+		public readonly health: number
 	) { }
 }

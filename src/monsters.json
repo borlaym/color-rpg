@@ -1,6 +1,7 @@
 [
 	{
 		"name": "Ogre",
-		"health": ["Red", "Red", "Yellow", "Green", "Red"]
+		"defense": ["Red", "Red", "Yellow", "Green", "Red"],
+		"health": 30
 	}
 ]

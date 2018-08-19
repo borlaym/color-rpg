@@ -18,7 +18,7 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 				}
 				return [
 					...state.slice(0, indexOfCharacter),
-					new Character(character.name, character.stances, newStance),
+					new Character(character.name, character.stances, newStance, character.health),
 					...state.slice(indexOfCharacter + 1)
 				]
 			}

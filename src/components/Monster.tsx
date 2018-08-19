@@ -7,7 +7,7 @@ export default function MonsterComponent(props: Monster) {
 	return (
 		<div className="monster">
 			<div className="monster__name">{props.name}</div>
-			<MonsterHealth colors={props.health} />
+			<MonsterHealth colors={props.defense} />
 		</div>
 	)
 }
