@@ -1,7 +1,8 @@
 import Action from "../models/Action";
 import Monster from "../models/Monster";
-import { isEqual } from 'lodash';
+import { isEqualWith } from 'lodash';
+import { arraysOfColorsMatch } from "../models/Color";
 
 export default function isAttackPossible(action: Action, monster: Monster) {
-	return isEqual(action.colors, monster.defense.slice(0, action.colors.length));
+	return isEqualWith(action.colors, monster.defense.slice(0, action.colors.length), arraysOfColorsMatch);
 }
