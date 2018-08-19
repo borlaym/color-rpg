@@ -4,11 +4,141 @@
 		"stances": [
 			{
 				"name": "Offensive",
-				"actions": ["Smash"]
+				"actions": [
+					"Mighty Blow",
+					"Furious Smash",
+					"Shield Bash",
+					"Knockback"
+				]
 			},
 			{
 				"name": "Defensive",
-				"actions": ["Blunt Attack"]
+				"actions": [
+					"Taunt",
+					"Shield Barrier",
+					"Disarm",
+					"Overpower"
+				]
+			},
+			{
+				"name": "Support",
+				"actions": [
+					"Charge"
+				]
+			},
+			{
+				"name": "Berserk",
+				"actions": [
+					"Flurry",
+					"Critical Hit"
+				]
+			}
+		]
+	},
+	{
+		"name": "Rogue",
+		"stances": [
+			{
+				"name": "Offensive",
+				"actions": [
+					"Riposte"
+				]
+			},
+			{
+				"name": "Defensive",
+				"actions": [
+					"Strike",
+					"Sword Dance",
+					"Backstab",
+					"Blinding Powder"
+				]
+			},
+			{
+				"name": "Support",
+				"actions": [
+					"Hide",
+					"Stun",
+					"Throwing Knife"
+				]
+			},
+			{
+				"name": "Stealth",
+				"actions": [
+					"Pickpocket",
+					"Ambush"
+				]
+			}
+		]
+	},
+	{
+		"name": "Cleric",
+		"stances": [
+			{
+				"name": "Offensive",
+				"actions": [
+					"Smite",
+					"Divine Radiance"
+				]
+			},
+			{
+				"name": "Defensive",
+				"actions": [
+					"Fade",
+					"Hammer of the Righteous",
+					"Blinding Light",
+					"Divine Shield"
+				]
+			},
+			{
+				"name": "Support",
+				"actions": [
+					"Aid",
+					"Judgement",
+					"Holy Nova"
+				]
+			},
+			{
+				"name": "Healing",
+				"actions": [
+					"Prayer of Healing",
+					"Heal"
+				]
+			}
+		]
+	},
+	{
+		"name": "Wizard",
+		"stances": [
+			{
+				"name": "Offensive",
+				"actions": [
+					"Fireball",
+					"Frost Nova",
+					"Ice Wall"
+				]
+			},
+			{
+				"name": "Defensive",
+				"actions": [
+					"Flame Barrier",
+					"Open the Rift"
+				]
+			},
+			{
+				"name": "Support",
+				"actions": [
+					"Mind Read",
+					"Confuse",
+					"Mind Blast"
+				]
+			},
+			{
+				"name": "Summoning",
+				"actions": [
+					"Summon Blood Imp",
+					"Summon Hellhound",
+					"Summon Succubus"
+				]
 			}
 		]
 	}
