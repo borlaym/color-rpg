@@ -35,7 +35,19 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 							}
 							return new Character(c.name, c.stances, newStance, c.health)
 						})
-							
+						break;
+					}
+					case 'Ice Barrier': {
+						console.log(attack.effect)
+						// Put everyone into defensive stance
+						newState = newState.map((c: Character) => {
+							const newStance = c.stances.find((s: Stance) => s.name === "Defensive");
+							if (!newStance) {
+								throw new Error('Defensive stance not found while Ice Barrier')
+							}
+							return new Character(c.name, c.stances, newStance, c.health)
+						})
+						break;
 					}
 				}
 			}
