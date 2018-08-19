@@ -5,7 +5,7 @@ import Character from './models/Character';
 import StanceComponent from './components/Stance';
 import { State } from './reducers';
 import Monster from './models/Monster';
-import MonsterHealth from './components/MonsterHealth';
+import MonsterComponent from './components/Monster';
 
 interface Props {
 	characters: Character[],
@@ -15,8 +15,7 @@ interface Props {
 function App(props: Props) {
 	return (
 		<div className="App">
-			<p>{props.currentMonster.name}</p>
-			<MonsterHealth colors={props.currentMonster.health} />
+			<MonsterComponent {...props.currentMonster} />
 			{props.characters.map((c: Character) => <StanceComponent key={c.name} {...c.stances[0]} />)}
 		</div>
 	);

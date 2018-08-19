@@ -1,0 +1,11 @@
+.monster {
+	width: 400px;
+	background-color: rgb(172, 141, 101);
+}
+
+.monster__name {
+	color: darkred;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
