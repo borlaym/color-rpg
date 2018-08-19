@@ -16,7 +16,9 @@ function App(props: Props) {
 	return (
 		<div className="App">
 			<MonsterComponent {...props.currentMonster} />
-			{props.characters.map((c: Character) => <CharacterComponent key={c.name} character={c} />)}
+			<div className="characters">
+				{props.characters.map((c: Character) => <CharacterComponent key={c.name} character={c} />)}
+			</div>
 		</div>
 	);
 }

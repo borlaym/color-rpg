@@ -5,3 +5,7 @@
 	padding: 30px;
 	align-items: center;
 }
+
+.characters {
+	display: flex;
+}

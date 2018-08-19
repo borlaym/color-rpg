@@ -1,8 +1,8 @@
 .character {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 250px;
+	justify-content: flex-start;
+	align-items: top;
+	width: 350px;
 	border: 2px solid brown;
 	flex-direction: column;
 	text-align: center;
