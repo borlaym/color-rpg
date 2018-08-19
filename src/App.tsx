@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import Character from './models/Character';
 import { State } from './reducers';
 import Monster from './models/Monster';
+import MonsterIntent from './models/MonsterIntent';
 import MonsterComponent from './components/Monster';
 import CharacterComponent from './components/Character';
 
 interface Props {
 	characters: Character[],
-	currentMonster: Monster
+	currentMonster: Monster,
+	monsterIntent: MonsterIntent
 }
 
 function App(props: Props) {
@@ -19,6 +21,7 @@ function App(props: Props) {
 			<div className="characters">
 				{props.characters.map((c: Character) => <CharacterComponent key={c.name} character={c} />)}
 			</div>
+			<p>{props.currentMonster.name} intends to attack {props.monsterIntent.target.name} in {props.monsterIntent.turnsLeft} turns</p>
 		</div>
 	);
 }
@@ -26,6 +29,7 @@ function App(props: Props) {
 export default connect(
 	(state: State) => ({
 		characters: state.characters,
-		currentMonster: state.currentMonster
+		currentMonster: state.currentMonster,
+		monsterIntent: state.monsterIntent
 	})
 )(App);
