@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Color } from '../types';
 import ColorCircle from './ColorCircle';
+import Color from '../models/Color';
 
 export default function MonsterHealth(props: { colors: Color[] }) {
 	return (

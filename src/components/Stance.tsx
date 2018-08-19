@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Stance } from '../types';
+import Stance from '../models/Stance';
 import ActionComponent from './Action';
 
 export default function StanceComponent(props: Stance) {

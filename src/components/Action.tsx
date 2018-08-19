@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Action } from '../types';
 import ColorCircle from './ColorCircle';
+import Action from '../models/Action';
 
 export default function ActionComponent(props: Action) {
 	return (
