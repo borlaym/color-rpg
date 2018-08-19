@@ -10,15 +10,19 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 			const character = action.payload.character;
 			const attack = action.payload.action;
 			const indexOfCharacter = state.indexOf(character)
-			const newStance = character.stances.find((s: Stance) => s.name === attack.toStance)
-			if (!newStance) {
-				throw new Error('Stance not found: ' + attack.toStance + ' when performing attack: ' + attack.name)
+			// Change stances if we need
+			if (attack.toStance) {
+				const newStance = character.stances.find((s: Stance) => s.name === attack.toStance)
+				if (!newStance) {
+					throw new Error('Stance not found: ' + attack.toStance + ' when performing attack: ' + attack.name)
+				}
+				return [
+					...state.slice(0, indexOfCharacter),
+					new Character(character.name, character.stances, newStance),
+					...state.slice(indexOfCharacter + 1)
+				]
 			}
-			return [
-				...state.slice(0, indexOfCharacter),
-				new Character(character.name, character.stances, newStance),
-				...state.slice(indexOfCharacter + 1)
-			]
+			return state
 		}
 		default:
 			return state;
