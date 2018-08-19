@@ -7,10 +7,18 @@ import { attack } from '../actions/character';
 import isAttackPossible from '../utils/isAttackPossible';
 import { State } from '../reducers';
 import Monster from '../models/Monster';
+import Character from '../models/Character';
 
-function ActionComponent(props: { action: Action, monster: Monster, onClick: (action: Action) => void}) {
+interface Props {
+	action: Action,
+	monster: Monster,
+	character: Character,
+	onClick: (action: Action, character: Character) => void
+}
+
+function ActionComponent(props: Props) {
 	const attackPossible = isAttackPossible(props.action, props.monster)
-	const clickHandler = attackPossible ? () => props.onClick(props.action) : undefined
+	const clickHandler = attackPossible ? () => props.onClick(props.action, props.character) : undefined
 	return (
 		<div className={`action ${!attackPossible && 'inactive'}`} onClick={clickHandler}>
 			<div className="action__name">{props.action.name}</div>
@@ -22,6 +30,6 @@ function ActionComponent(props: { action: Action, monster: Monster, onClick: (ac
 export default connect(
 	(state: State) => ({ monster: state.currentMonster }),
 	(dispatch) => ({
-		onClick: (action: Action) => dispatch(attack(action))
+		onClick: (action: Action, character: Character) => dispatch(attack(action, character))
 	})
 )(ActionComponent)

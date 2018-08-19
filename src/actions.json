@@ -1,6 +1,12 @@
 [
 	{
 		"name": "Smash",
-		"colors": ["Red"]
+		"colors": ["Red"],
+		"toStance": "Defensive"
+	},
+	{
+		"name": "Blunt Attack",
+		"colors": ["Yellow"],
+		"toStance": ["Offensive"]
 	}
 ]

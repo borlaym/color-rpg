@@ -8,7 +8,7 @@ export default function CharacterComponent(props: { character: Character }) {
 	return (
 		<div className="character">
 			<div className="character__name">{character.name}</div>
-			<StanceComponent {...character.currentStance} />
+			<StanceComponent character={character} stance={character.currentStance} />
 		</div>
 	)
 }

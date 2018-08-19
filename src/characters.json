@@ -5,6 +5,10 @@
 			{
 				"name": "Offensive",
 				"actions": ["Smash"]
+			},
+			{
+				"name": "Defensive",
+				"actions": ["Blunt Attack"]
 			}
 		]
 	}

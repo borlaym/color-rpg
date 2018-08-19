@@ -3,7 +3,8 @@ import actionList from '../actions.json';
 
 interface ActionAsJSON {
 	name: string,
-	colors: string[]
+	colors: string[],
+	toStance: string
 }
 
 export default class Action {
@@ -18,10 +19,11 @@ export default class Action {
 			}
 			return Color[c]
 		})
-		return new Action(actionData.name, colors)
+		return new Action(actionData.name, colors, actionData.toStance)
 	}
 	constructor(
 		public readonly name: string,
-		public readonly colors: Color[]
+		public readonly colors: Color[],
+		public readonly toStance: string
 	) {}
 }

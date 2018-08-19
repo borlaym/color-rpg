@@ -10,15 +10,12 @@ export interface CharacterAsJSON {
 
 export default class Character {
 	public static parse(json: CharacterAsJSON): Character {
-		return new Character(json.name, json.stances.map(s => Stance.parse(s)))
+		const parsedStances = json.stances.map(s => Stance.parse(s))
+		return new Character(json.name, parsedStances, parsedStances[0])
 	}
-	private currentStanceIndex = 0;
 	constructor(
 		public readonly name: string,
-		public readonly stances: Stance[]
+		public readonly stances: Stance[],
+		public readonly currentStance: Stance
 	) {}
-
-	public get currentStance(): Stance {
-		return this.stances[this.currentStanceIndex]
-	}
 }
