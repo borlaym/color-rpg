@@ -17,4 +17,18 @@ export function arraysOfColorsMatch(a1: Color[], a2: Color[]) {
 	return every(a1, (c, i) => colorsMatch(c, a2[i]))
 }
 
+export function randomColor(): Color {
+	const rnd = Math.random() * 100;
+	if (rnd < 25) {
+		return Color.Red
+	} else if (rnd < 50) {
+		return Color.Blue
+	} else if (rnd < 75) {
+		return Color.Yellow
+	} else if (rnd < 100) {
+		return Color.Green
+	}
+	return Color.Red
+}
+
 export default Color

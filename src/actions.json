@@ -117,6 +117,7 @@
 	},{
 		"name": "Confuse",
 		"colors": [],
-		"toStance": "Offensive"
+		"toStance": "Offensive",
+		"effect": "Confuse"
 	}
 ]
