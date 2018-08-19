@@ -1,7 +1,7 @@
 import Color from "./Color";
 import monsterList from '../monsters.json';
 
-interface MonsterAsJSON {
+export interface MonsterAsJSON {
 	name: string,
 	health: string[]
 }

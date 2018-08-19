@@ -1,4 +1,4 @@
-import getAllCharacters from "../utils/CharacterParser";
+import { getAllCharacters } from "../utils/parsers";
 import ReduxAction from "../models/ReduxAction";
 
 const defaultState = getAllCharacters()
