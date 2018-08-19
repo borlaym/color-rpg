@@ -1,6 +1,18 @@
 [
 	{
 		"name": "Ogre",
-		"health": 30
+		"health": 30,
+		"attacks": [
+			{
+				"name": "Smash",
+				"damage": 3,
+				"turns": 3
+			},
+			{
+				"name": "Brutal Smash",
+				"damage": 5,
+				"turns": 4
+			}
+		]
 	}
 ]

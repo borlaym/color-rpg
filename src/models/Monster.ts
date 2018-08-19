@@ -1,10 +1,12 @@
 import Color, { randomColor } from "./Color";
 import monsterList from '../monsters.json';
+import MonsterAttack, { MonsterAttackAsJSON } from './MonsterAttack'
 
 export interface MonsterAsJSON {
 	name: string,
 	defense: string[],
-	health: number
+	health: number,
+	attacks: MonsterAttackAsJSON[]
 }
 
 export default class Monster {
@@ -17,11 +19,12 @@ export default class Monster {
 		for (let i = 0; i < 15; i++) {
 			defense.push(randomColor())
 		}
-		return new Monster(monsterData.name, defense, monsterData.health)
+		return new Monster(monsterData.name, defense, monsterData.health, monsterData.attacks.map((a: MonsterAttack) => MonsterAttack.parse(a)))
 	}
 	constructor(
 		public readonly name: string,
 		public readonly defense: Color[],
-		public readonly health: number
+		public readonly health: number,
+		public readonly attacks: MonsterAttack[]
 	) { }
 }
