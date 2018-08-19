@@ -9,8 +9,8 @@ export interface CharacterAsJSON {
 }
 
 export default class Character {
-	static parse(json: CharacterAsJSON, actionDictionary: {}): Character {
-		return new Character(json.name, [])
+	static parse(json: CharacterAsJSON): Character {
+		return new Character(json.name, json.stances.map(s => Stance.parse(s)))
 	}
 	constructor(
 		public readonly name: string,
