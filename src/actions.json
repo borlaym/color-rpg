@@ -15,6 +15,11 @@
 		"toStance": "Berserk"
 	},
 	{
+		"name": "Taunt",
+		"colors": [],
+		"effect": "Taunt"
+	},
+	{
 		"name": "Shield Bash",
 		"colors": [
 			"Green"
