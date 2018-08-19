@@ -7,8 +7,8 @@ interface ActionAsJSON {
 }
 
 export default class Action {
-	static parse(name: string): Action {
-		const actionData: ActionAsJSON = actionDictionary[name];
+	public static parse(name: string): Action {
+		const actionData: ActionAsJSON = actionDictionary.find((a: ActionAsJSON) => a.name === name);
 		if (!actionData) {
 			throw new Error('Action not found among available actions: ' + name);
 		}
