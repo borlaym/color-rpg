@@ -19,7 +19,7 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 				}
 				newState = [
 					...newState.slice(0, indexOfCharacter),
-					new Character(character.name, character.stances, newStance, character.health),
+					new Character(character.name, character.stances, newStance, character.health, character.colors),
 					...newState.slice(indexOfCharacter + 1)
 				]
 			}
@@ -33,7 +33,7 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 							if (!newStance) {
 								throw new Error('Offensive stance not found while Battlecry')
 							}
-							return new Character(c.name, c.stances, newStance, c.health)
+							return new Character(c.name, c.stances, newStance, c.health, c.colors)
 						})
 						break;
 					}
@@ -45,7 +45,7 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 							if (!newStance) {
 								throw new Error('Defensive stance not found while Ice Barrier')
 							}
-							return new Character(c.name, c.stances, newStance, c.health)
+							return new Character(c.name, c.stances, newStance, c.health, c.colors)
 						})
 						break;
 					}

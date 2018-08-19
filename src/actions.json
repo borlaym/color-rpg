@@ -47,7 +47,7 @@
 	},{
 		"name": "Backstab",
 		"colors": [
-			"Red"
+			"Yellow"
 		],
 		"toStance": "Offensive"
 	},{
@@ -94,7 +94,7 @@
 	},{
 		"name": "Frost Nova",
 		"colors": [
-			"Yellow"
+			"Red"
 		],
 		"toStance": "Support"
 	},{

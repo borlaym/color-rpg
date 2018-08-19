@@ -14,4 +14,7 @@
 	font-size: 25px;
 	font-weight: bold;
 	border-bottom: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center
 }

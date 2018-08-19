@@ -2,6 +2,7 @@
 	{
 		"name": "Fighter",
 		"health": 14,
+		"colors": ["Red", "Green"],
 		"stances": [
 			{
 				"name": "Offensive",
@@ -33,6 +34,10 @@
 	},
 	{
 		"name": "Rogue",
+		"colors": [
+			"Green",
+			"Yellow"
+		],
 		"health": 9,
 		"stances": [
 			{
@@ -64,6 +69,10 @@
 	},
 	{
 		"name": "Cleric",
+		"colors": [
+			"Yellow",
+			"Blue"
+		],
 		"health": 11,
 		"stances": [
 			{
@@ -94,6 +103,10 @@
 	},
 	{
 		"name": "Wizard",
+		"colors": [
+			"Blue",
+			"Red"
+		],
 		"health": 6,
 		"stances": [
 			{
