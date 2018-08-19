@@ -1,12 +1,298 @@
 [
 	{
-		"name": "Smash",
-		"colors": ["Red"],
-		"toStance": "Defensive"
+		"name": "Mighty Blow",
+		"colors": [
+			"Red"
+		]
 	},
 	{
-		"name": "Blunt Attack",
-		"colors": ["Yellow"],
-		"toStance": ["Offensive"]
+		"name": "Furious Smash",
+		"colors": [
+			"Red",
+			"Red"
+		],
+		"toStance": [
+			"Berserk"
+		]
+	},
+	{
+		"name": "Shield Bash",
+		"colors": [
+			"Red"
+		],
+		"toStance": [
+			"Defensive"
+		]
+	},
+	{
+		"name": "Knockback",
+		"colors": [
+			"Yellow"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Taunt",
+		"colors": [],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Shield Barrier",
+		"colors": []
+	},{
+		"name": "Disarm",
+		"colors": [
+			"Green"
+		]
+	},{
+		"name": "Overpower",
+		"colors": [
+			"Red"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Charge",
+		"colors": [
+			"Green"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Flurry",
+		"colors": [
+			"Any",
+			"Any"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Critical Hit",
+		"colors": [
+			"Red"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Riposte",
+		"colors": [
+			"Green"
+		],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Strike",
+		"colors": [
+			"Green"
+		]
+	},{
+		"name": "Sword Dance",
+		"colors": [
+			"Green",
+			"Green"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Backstab",
+		"colors": [
+			"Red"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Blinding Powder",
+		"colors": [
+			"Blue"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Hide",
+		"colors": [],
+		"toStance": [
+			"Stealth"
+		]
+	},{
+		"name": "Stun",
+		"colors": []
+	},{
+		"name": "Throwing Knife",
+		"colors": [
+			"Colorless"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Pickpocket",
+		"colors": [],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Ambush",
+		"colors": [
+			"Any"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Smite",
+		"colors": [
+			"Yellow"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Divine Radiance",
+		"colors": [
+			"Blue"
+		],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Fade",
+		"colors": []
+	},{
+		"name": "Hammer of the Righteous",
+		"colors": [
+			"Red"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Blinding Light",
+		"colors": [
+			"Yellow"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Divine Shield",
+		"colors": [],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Aid",
+		"colors": [],
+		"toStance": [
+			"Healing"
+		]
+	},{
+		"name": "Judgement",
+		"colors": [
+			"Yellow"
+		]
+	},{
+		"name": "Holy Nova",
+		"colors": [
+			"Yellow",
+			"Yellow"
+		],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Prayer of Healing",
+		"colors": [],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Heal",
+		"colors": [],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Fireball",
+		"colors": [
+			"Blue"
+		]
+	},{
+		"name": "Frost Nova",
+		"colors": [
+			"Green"
+		],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Ice Wall",
+		"colors": [
+			"Green"
+		],
+		"toStance": [
+			"Support"
+		]
+	},{
+		"name": "Flame Barrier",
+		"colors": [
+			"Blue"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Open the Rift",
+		"colors": [
+			"Blue",
+			"Blue"
+		],
+		"toStance": [
+			"Summoning"
+		]
+	},{
+		"name": "Mind Read",
+		"colors": []
+	},{
+		"name": "Confuse",
+		"colors": [],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Mind Blast",
+		"colors": [
+			"Yellow"
+		],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Summon Blood Imp",
+		"colors": [],
+		"toStance": [
+			"Offensive"
+		]
+	},{
+		"name": "Summon Hellhound",
+		"colors": [],
+		"toStance": [
+			"Defensive"
+		]
+	},{
+		"name": "Summon Succubus",
+		"colors": [],
+		"toStance": [
+			"Support"
+		]
 	}
 ]
