@@ -12,7 +12,7 @@ export default function CurrentMonsterReducer(state = defaultState, action: Redu
 			const attackColors = action.payload.action.colors;
 			const monsterFirstColors = state.defense.slice(0, attackColors.length)
 			if (isAttackPossible(action.payload.action, state)) {
-				let newMonster = new Monster(state.name, state.defense.slice(attackColors.length), state.health)
+				let newMonster = new Monster(state.name, state.defense.slice(attackColors.length), state.health, state.attacks)
 				// Apply effects
 				if (attack.effect) {
 					switch (attack.effect) {
@@ -21,7 +21,8 @@ export default function CurrentMonsterReducer(state = defaultState, action: Redu
 							newMonster = new Monster(
 								newMonster.name,
 								newMonster.defense.map(() => randomColor()),
-								newMonster.health
+								newMonster.health,
+								newMonster.attacks
 							)
 						}
 					}

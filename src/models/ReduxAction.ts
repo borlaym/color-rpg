@@ -1,4 +1,5 @@
 export enum ActionType {
+	NO_ACTION,
 	ATTACK
 }
 
