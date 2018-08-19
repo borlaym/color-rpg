@@ -7,7 +7,7 @@ export default function StanceComponent(props: Stance) {
 	return (
 		<div className="stance">
 			<div className="stance__name">{props.name}</div>
-			{props.actions.map((a, i) => <ActionComponent key={i} {...a} />)}
+			{props.actions.map((a, i) => <ActionComponent key={i} action={a} />)}
 		</div>
 	)
 }
