@@ -9,6 +9,10 @@ import { State } from '../reducers';
 import Monster from '../models/Monster';
 import Character from '../models/Character';
 
+const effectDescriptions = {
+	"Battlecry": "Move everyone to Offensive stance"
+}
+
 interface Props {
 	action: Action,
 	monster: Monster,
@@ -24,6 +28,7 @@ function ActionComponent(props: Props) {
 			<div className="action__name">{props.action.name}</div>
 			{props.action.colors.map((c, i) => <ColorCircle key={i} color={c} />)}
 			{props.action.toStance ? ('--> ' + props.action.toStance) : null}
+			{props.action.effect && <span className="action__description">{effectDescriptions[props.action.effect]}</span>}
 		</div>
 	)
 }

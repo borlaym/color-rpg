@@ -17,3 +17,9 @@
 	background: white;
 	cursor: default;
 }
+
+.action__description {
+	margin-left: 5px;
+	font-size: 12px;
+	font-style: italic;
+}

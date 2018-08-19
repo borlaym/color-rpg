@@ -26,12 +26,12 @@ export default function CharactersReducer(state = defaultState, action: ReduxAct
 			// Apply effects
 			if (attack.effect) {
 				switch (attack.effect) {
-					case 'Taunt': {
+					case 'Battlecry': {
 						// Put everyone into offensive stance
 						newState = newState.map((c: Character) => {
 							const newStance = c.stances.find((s: Stance) => s.name === "Offensive");
 							if (!newStance) {
-								throw new Error('Offensive stance not found while taunting')
+								throw new Error('Offensive stance not found while Battlecry')
 							}
 							return new Character(c.name, c.stances, newStance, c.health)
 						})

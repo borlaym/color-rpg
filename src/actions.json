@@ -15,9 +15,9 @@
 		"toStance": "Berserk"
 	},
 	{
-		"name": "Taunt",
+		"name": "Battlecry",
 		"colors": [],
-		"effect": "Taunt"
+		"effect": "Battlecry"
 	},
 	{
 		"name": "Shield Bash",
