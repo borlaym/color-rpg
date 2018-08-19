@@ -1,6 +1,35 @@
+@keyframes pulsate {
+	0% { width: 35px; height: 35px; margin-right: 10px; margin-left: 10px;}
+    50% { width: 20px; height: 20px; margin-right: 17.5px; margin-left: 17.5px;}
+	100% { width: 35px; height: 35px; margin-right: 10px; margin-left: 10px;}
+}
+
 .circle {
 	width: 20px;
 	height: 20px;
-	border-radius: 20px;
+	border-radius: 50px;
 	margin: 10px;
+	border: 2px solid black;
+}
+
+.circle.red {
+	background-color: darkred;
+}
+
+.circle.yellow {
+	background-color: goldenrod;
+}
+
+.circle.blue {
+	background-color: dodgerblue;
+}
+
+.circle.green {
+	background-color: forestgreen;
+}
+
+.circle.large {
+	width: 35px;
+	height: 35px;
+	animation: pulsate 1s infinite;
 }
