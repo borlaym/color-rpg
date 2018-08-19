@@ -4,7 +4,16 @@
 	padding-left: 20px;
 }
 
+.action.inactive {
+	color: gray;
+}
+
 .action:hover {
 	background: rgba(0,0,0,0.1);
 	cursor: pointer;
+}
+
+.action.inactive:hover {
+	background: white;
+	cursor: default;
 }
