@@ -13,13 +13,22 @@ export default class Monster {
 		if (!monsterData) {
 			throw new Error('Monster not found among available monsters: ' + name);
 		}
-		const health: Color[] = monsterData.defense.map(c => {
-			if (!Color[c]) {
-				throw new Error('Color not found: ' + c);
+		const defense: Color[] = []
+		for (let i = 0; i < 15; i++) {
+			const rnd = Math.random() * 100;
+			if (rnd < 20) {
+				defense.push(Color.Red)
+			} else if (rnd < 40) {
+				defense.push(Color.Blue)
+			} else if (rnd < 60) {
+				defense.push(Color.Yellow)
+			} else if (rnd < 80) {
+				defense.push(Color.Green)
+			} else if (rnd < 40) {
+				defense.push(Color.Colorless)
 			}
-			return Color[c]
-		})
-		return new Monster(monsterData.name, health, monsterData.health)
+		}
+		return new Monster(monsterData.name, defense, monsterData.health)
 	}
 	constructor(
 		public readonly name: string,
