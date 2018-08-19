@@ -1,5 +1,5 @@
 import Color from "./Color";
-import actionDictionary from '../actions.json';
+import actionList from '../actions.json';
 
 interface ActionAsJSON {
 	name: string,
@@ -8,7 +8,7 @@ interface ActionAsJSON {
 
 export default class Action {
 	public static parse(name: string): Action {
-		const actionData: ActionAsJSON = actionDictionary.find((a: ActionAsJSON) => a.name === name);
+		const actionData: ActionAsJSON = actionList.find((a: ActionAsJSON) => a.name === name);
 		if (!actionData) {
 			throw new Error('Action not found among available actions: ' + name);
 		}

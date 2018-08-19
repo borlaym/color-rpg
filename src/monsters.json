@@ -1,0 +1,6 @@
+[
+	{
+		"name": "Ogre",
+		"health": ["Red", "Red", "Yellow", "Green", "Red"]
+	}
+]
