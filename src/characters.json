@@ -1,0 +1,11 @@
+[
+	{
+		"name": "Fighter",
+		"stances": [
+			{
+				"name": "Offensive",
+				"actions": ["Smash"]
+			}
+		]
+	}
+]
