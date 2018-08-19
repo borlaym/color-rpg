@@ -1,6 +1,7 @@
 .monster {
 	width: 400px;
 	background-color: rgb(172, 141, 101);
+	margin-bottom: 30px;
 }
 
 .monster__name {

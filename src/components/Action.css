@@ -1,0 +1,10 @@
+.action {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.action:hover {
+	background: rgba(0,0,0,0.1);
+	cursor: pointer;
+}

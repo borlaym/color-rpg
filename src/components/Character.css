@@ -1,0 +1,17 @@
+.character {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	border: 2px solid brown;
+	flex-direction: column;
+	text-align: center;
+}
+
+.character__name {
+	width: 100%;
+	margin: 5px 0;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
