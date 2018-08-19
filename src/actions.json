@@ -11,33 +11,25 @@
 			"Red",
 			"Red"
 		],
-		"toStance": [
-			"Berserk"
-		]
+		"toStance": "Berserk"
 	},
 	{
 		"name": "Shield Bash",
 		"colors": [
 			"Red"
 		],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},
 	{
 		"name": "Knockback",
 		"colors": [
 			"Yellow"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Taunt",
 		"colors": [],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Shield Barrier",
 		"colors": []
@@ -51,42 +43,32 @@
 		"colors": [
 			"Red"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Charge",
 		"colors": [
 			"Green"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Flurry",
 		"colors": [
 			"Any",
 			"Any"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Critical Hit",
 		"colors": [
 			"Red"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Riposte",
 		"colors": [
 			"Green"
 		],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Strike",
 		"colors": [
@@ -98,31 +80,23 @@
 			"Green",
 			"Green"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Backstab",
 		"colors": [
 			"Red"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Blinding Powder",
 		"colors": [
 			"Blue"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Hide",
 		"colors": [],
-		"toStance": [
-			"Stealth"
-		]
+		"toStance": "Stealth"
 	},{
 		"name": "Stun",
 		"colors": []
@@ -131,39 +105,29 @@
 		"colors": [
 			"Colorless"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Pickpocket",
 		"colors": [],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Ambush",
 		"colors": [
 			"Any"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Smite",
 		"colors": [
 			"Yellow"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Divine Radiance",
 		"colors": [
 			"Blue"
 		],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Fade",
 		"colors": []
@@ -172,29 +136,21 @@
 		"colors": [
 			"Red"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Blinding Light",
 		"colors": [
 			"Yellow"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Divine Shield",
 		"colors": [],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Aid",
 		"colors": [],
-		"toStance": [
-			"Healing"
-		]
+		"toStance": "Healing"
 	},{
 		"name": "Judgement",
 		"colors": [
@@ -206,21 +162,15 @@
 			"Yellow",
 			"Yellow"
 		],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Prayer of Healing",
 		"colors": [],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Heal",
 		"colors": [],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Fireball",
 		"colors": [
@@ -231,68 +181,50 @@
 		"colors": [
 			"Green"
 		],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Ice Wall",
 		"colors": [
 			"Green"
 		],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	},{
 		"name": "Flame Barrier",
 		"colors": [
 			"Blue"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Open the Rift",
 		"colors": [
 			"Blue",
 			"Blue"
 		],
-		"toStance": [
-			"Summoning"
-		]
+		"toStance": "Summoning"
 	},{
 		"name": "Mind Read",
 		"colors": []
 	},{
 		"name": "Confuse",
 		"colors": [],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Mind Blast",
 		"colors": [
 			"Yellow"
 		],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Summon Blood Imp",
 		"colors": [],
-		"toStance": [
-			"Offensive"
-		]
+		"toStance": "Offensive"
 	},{
 		"name": "Summon Hellhound",
 		"colors": [],
-		"toStance": [
-			"Defensive"
-		]
+		"toStance": "Defensive"
 	},{
 		"name": "Summon Succubus",
 		"colors": [],
-		"toStance": [
-			"Support"
-		]
+		"toStance": "Support"
 	}
 ]
