@@ -10,7 +10,9 @@ import Monster from '../models/Monster';
 import Character from '../models/Character';
 
 const effectDescriptions = {
-	"Battlecry": "Move everyone to Offensive stance"
+	"Battlecry": "Move everyone to Offensive stance",
+	"Ice Barrier": "Move everyone to Defensive stance",
+	"Confuse": "Randomise monster defense colors"
 }
 
 interface Props {
