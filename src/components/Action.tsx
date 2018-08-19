@@ -23,7 +23,7 @@ function ActionComponent(props: Props) {
 		<div className={`action ${!attackPossible && 'inactive'}`} onClick={clickHandler}>
 			<div className="action__name">{props.action.name}</div>
 			{props.action.colors.map((c, i) => <ColorCircle key={i} color={c} />)}
-			--> {props.action.toStance}
+			{props.action.toStance ? ('--> ' + props.action.toStance) : null}
 		</div>
 	)
 }
