@@ -7,18 +7,13 @@
 				"name": "Offensive",
 				"actions": [
 					"Mighty Blow",
-					"Furious Smash",
-					"Shield Bash",
-					"Knockback"
+					"Furious Smash"
 				]
 			},
 			{
 				"name": "Defensive",
 				"actions": [
-					"Taunt",
-					"Shield Barrier",
-					"Disarm",
-					"Overpower"
+					"Shield Bash"
 				]
 			},
 			{
@@ -30,8 +25,7 @@
 			{
 				"name": "Berserk",
 				"actions": [
-					"Flurry",
-					"Critical Hit"
+					"Flurry"
 				]
 			}
 		]
@@ -49,8 +43,6 @@
 			{
 				"name": "Defensive",
 				"actions": [
-					"Strike",
-					"Sword Dance",
 					"Backstab",
 					"Blinding Powder"
 				]
@@ -58,15 +50,12 @@
 			{
 				"name": "Support",
 				"actions": [
-					"Hide",
-					"Stun",
-					"Throwing Knife"
+					"Hide"
 				]
 			},
 			{
 				"name": "Stealth",
 				"actions": [
-					"Pickpocket",
 					"Ambush"
 				]
 			}
@@ -79,31 +68,24 @@
 			{
 				"name": "Offensive",
 				"actions": [
-					"Smite",
-					"Divine Radiance"
+					"Smite"
 				]
 			},
 			{
 				"name": "Defensive",
 				"actions": [
-					"Fade",
-					"Hammer of the Righteous",
-					"Blinding Light",
-					"Divine Shield"
+					"Hammer of the Righteous"
 				]
 			},
 			{
 				"name": "Support",
 				"actions": [
-					"Aid",
-					"Judgement",
-					"Holy Nova"
+					"Aid"
 				]
 			},
 			{
 				"name": "Healing",
 				"actions": [
-					"Prayer of Healing",
 					"Heal"
 				]
 			}
@@ -117,31 +99,25 @@
 				"name": "Offensive",
 				"actions": [
 					"Fireball",
-					"Frost Nova",
-					"Ice Wall"
+					"Pyroblast"
 				]
 			},
 			{
 				"name": "Defensive",
 				"actions": [
-					"Flame Barrier",
-					"Open the Rift"
+					"Frost Nova"
 				]
 			},
 			{
 				"name": "Support",
 				"actions": [
-					"Mind Read",
-					"Confuse",
-					"Mind Blast"
+					"Confuse"
 				]
 			},
 			{
-				"name": "Summoning",
+				"name": "Void",
 				"actions": [
-					"Summon Blood Imp",
-					"Summon Hellhound",
-					"Summon Succubus"
+					"Void Blast"
 				]
 			}
 		]

@@ -3,7 +3,8 @@
 		"name": "Mighty Blow",
 		"colors": [
 			"Red"
-		]
+		],
+		"toStance": "Defensive"
 	},
 	{
 		"name": "Furious Smash",
@@ -16,32 +17,7 @@
 	{
 		"name": "Shield Bash",
 		"colors": [
-			"Red"
-		],
-		"toStance": "Defensive"
-	},
-	{
-		"name": "Knockback",
-		"colors": [
-			"Yellow"
-		],
-		"toStance": "Support"
-	},{
-		"name": "Taunt",
-		"colors": [],
-		"toStance": "Offensive"
-	},{
-		"name": "Shield Barrier",
-		"colors": []
-	},{
-		"name": "Disarm",
-		"colors": [
 			"Green"
-		]
-	},{
-		"name": "Overpower",
-		"colors": [
-			"Red"
 		],
 		"toStance": "Offensive"
 	},{
@@ -58,29 +34,11 @@
 		],
 		"toStance": "Support"
 	},{
-		"name": "Critical Hit",
-		"colors": [
-			"Red"
-		],
-		"toStance": "Offensive"
-	},{
 		"name": "Riposte",
 		"colors": [
 			"Green"
 		],
 		"toStance": "Defensive"
-	},{
-		"name": "Strike",
-		"colors": [
-			"Green"
-		]
-	},{
-		"name": "Sword Dance",
-		"colors": [
-			"Green",
-			"Green"
-		],
-		"toStance": "Offensive"
 	},{
 		"name": "Backstab",
 		"colors": [
@@ -89,30 +47,16 @@
 		"toStance": "Offensive"
 	},{
 		"name": "Blinding Powder",
-		"colors": [
-			"Blue"
-		],
+		"colors": [],
 		"toStance": "Support"
 	},{
 		"name": "Hide",
 		"colors": [],
 		"toStance": "Stealth"
 	},{
-		"name": "Stun",
-		"colors": []
-	},{
-		"name": "Throwing Knife",
-		"colors": [
-			"Colorless"
-		],
-		"toStance": "Offensive"
-	},{
-		"name": "Pickpocket",
-		"colors": [],
-		"toStance": "Defensive"
-	},{
 		"name": "Ambush",
 		"colors": [
+			"Any",
 			"Any"
 		],
 		"toStance": "Offensive"
@@ -123,50 +67,15 @@
 		],
 		"toStance": "Support"
 	},{
-		"name": "Divine Radiance",
+		"name": "Hammer of the Righteous",
 		"colors": [
 			"Blue"
 		],
-		"toStance": "Defensive"
-	},{
-		"name": "Fade",
-		"colors": []
-	},{
-		"name": "Hammer of the Righteous",
-		"colors": [
-			"Red"
-		],
 		"toStance": "Offensive"
-	},{
-		"name": "Blinding Light",
-		"colors": [
-			"Yellow"
-		],
-		"toStance": "Support"
-	},{
-		"name": "Divine Shield",
-		"colors": [],
-		"toStance": "Support"
 	},{
 		"name": "Aid",
 		"colors": [],
 		"toStance": "Healing"
-	},{
-		"name": "Judgement",
-		"colors": [
-			"Yellow"
-		]
-	},{
-		"name": "Holy Nova",
-		"colors": [
-			"Yellow",
-			"Yellow"
-		],
-		"toStance": "Defensive"
-	},{
-		"name": "Prayer of Healing",
-		"colors": [],
-		"toStance": "Defensive"
 	},{
 		"name": "Heal",
 		"colors": [],
@@ -175,56 +84,30 @@
 		"name": "Fireball",
 		"colors": [
 			"Blue"
-		]
-	},{
-		"name": "Frost Nova",
-		"colors": [
-			"Green"
-		],
-		"toStance": "Defensive"
-	},{
-		"name": "Ice Wall",
-		"colors": [
-			"Green"
-		],
-		"toStance": "Support"
-	},{
-		"name": "Flame Barrier",
-		"colors": [
-			"Blue"
 		],
 		"toStance": "Offensive"
 	},{
-		"name": "Open the Rift",
+		"name": "Frost Nova",
+		"colors": [
+			"Yellow"
+		],
+		"toStance": "Support"
+	},{
+		"name": "Pyroblast",
 		"colors": [
 			"Blue",
 			"Blue"
 		],
-		"toStance": "Summoning"
+		"toStance": "Void"
 	},{
-		"name": "Mind Read",
-		"colors": []
-	},{
-		"name": "Confuse",
-		"colors": [],
-		"toStance": "Defensive"
-	},{
-		"name": "Mind Blast",
+		"name": "Void Blast",
 		"colors": [
-			"Yellow"
+			"Any"
 		],
 		"toStance": "Offensive"
 	},{
-		"name": "Summon Blood Imp",
+		"name": "Confuse",
 		"colors": [],
 		"toStance": "Offensive"
-	},{
-		"name": "Summon Hellhound",
-		"colors": [],
-		"toStance": "Defensive"
-	},{
-		"name": "Summon Succubus",
-		"colors": [],
-		"toStance": "Support"
 	}
 ]
