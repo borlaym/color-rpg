@@ -35,7 +35,6 @@ function applyMonsterAttack(state: State): State {
 			new Character(target.name, target.stances, target.currentStance, target.health - intent.attack.damage, target.colors),
 			...characters.slice(targetIndex + 1)
 		]
-		console.log(newCharacters)
 		const newAttackIndex = Math.floor(Math.random() * state.currentMonster.attacks.length)
 		const newIntent = MonsterIntent.fromAttack(state.currentMonster.attacks[newAttackIndex], newCharacters)
 		return {

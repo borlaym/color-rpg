@@ -16,7 +16,7 @@ export default class Monster {
 			throw new Error('Monster not found among available monsters: ' + name);
 		}
 		const defense: Color[] = []
-		for (let i = 0; i < 15; i++) {
+		for (let i = 0; i < monsterData.health; i++) {
 			defense.push(randomColor())
 		}
 		return new Monster(monsterData.name, defense, monsterData.health, monsterData.attacks.map((a: MonsterAttack) => MonsterAttack.parse(a)))

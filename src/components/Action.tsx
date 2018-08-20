@@ -12,7 +12,8 @@ import Character from '../models/Character';
 const effectDescriptions = {
 	"Battlecry": "Move everyone to Offensive stance",
 	"Ice Barrier": "Move everyone to Defensive stance",
-	"Confuse": "Randomise monster defense colors"
+	"Confuse": "Randomise monster defense colors",
+	"Heal": "Heal 2 on all party members"
 }
 
 interface Props {
