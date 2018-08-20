@@ -21,14 +21,41 @@ const initialState = {
 	monsterIntent: MonsterIntentReducer(MonsterIntent.fromAttack(initialMonster.attacks[0], initialCharacters), nullAction, initialMonster)
 }
 
+function applyMonsterAttack(state: State): State {
+	const intent = state.monsterIntent
+	const characters = state.characters
+	if (intent.turnsLeft === 0) {
+		const target = state.characters.find(c => c.name === intent.target.name)
+		if (!target) {
+			throw new Error('Target not found for monster attack')
+		}
+		const targetIndex = state.characters.indexOf(target)
+		const newCharacters = [
+			...characters.slice(0, targetIndex),
+			new Character(target.name, target.stances, target.currentStance, target.health - intent.attack.damage, target.colors),
+			...characters.slice(targetIndex + 1)
+		]
+		console.log(newCharacters)
+		const newAttackIndex = Math.floor(Math.random() * state.currentMonster.attacks.length)
+		const newIntent = MonsterIntent.fromAttack(state.currentMonster.attacks[newAttackIndex], newCharacters)
+		return {
+			...state,
+			characters: newCharacters,
+			monsterIntent: newIntent
+		}
+	}
+	return state
+}
+
 export default function rootReducer(state: State = initialState, action: ReduxAction<any>): State {
 	const monster = CurrentMonsterReducer(state.currentMonster, action)
-	return {
+	const newState = {
 		characters: CharactersReducer(state.characters, action),
 		currentMonster: monster,
 		currentTurn: TurnReducer(state.currentTurn, action),
 		monsterIntent: MonsterIntentReducer(state.monsterIntent, action, monster)
 	}
+	return applyMonsterAttack(newState)
 }
 
 export interface State {
