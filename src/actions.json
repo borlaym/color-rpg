@@ -26,6 +26,11 @@
 		],
 		"toStance": "Offensive"
 	},{
+		"name": "Taunt",
+		"colors": [],
+		"toStance": "Offensive",
+		"effect": "Taunt"
+	},{
 		"name": "Charge",
 		"colors": [
 			"Green"

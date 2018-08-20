@@ -15,7 +15,8 @@
 			{
 				"name": "Defensive",
 				"actions": [
-					"Shield Bash"
+					"Shield Bash",
+					"Taunt"
 				]
 			},
 			{
